@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta charset="UTF-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Aquamatika</title>
+  <link rel="stylesheet" href="plugins/slick/slick.css"/>
+  <link rel="stylesheet" href="plugins/slick/slick-theme.css"/>
+  <link rel="stylesheet" href="plugins/fancyBox/source/jquery.fancybox.css"/>
+  <link rel="stylesheet" href="plugins/jquery-ui-1.12.0.custom/jquery-ui.css"/>
+  <link rel="stylesheet" href="css/main.css"/>
+  <script src="js/jquery-3.0.0.min.js"></script>
+  <script src="plugins/slick/slick.min.js"></script>
+  <script src="plugins/fancyBox/source/jquery.fancybox.js"></script>
+  <script src="plugins/jquery-ui-1.12.0.custom/jquery-ui.js"></script>
+  <script src="js/script.js"></script>
+</html>
+<body>
+  <header id="gotop">
+    <div class="header-top">
+      <div class="container"><a href="index.html" class="home"></a><a href="" class="search"></a>
+        <button type="button" class="hamburger hamburger--collapse-r"><span class="hamburger-box"><span class="hamburger-inner"></span></span></button>
+        <div class="main-menu">
+          <ul>
+            <li><a href="catalogue.html">каталог</a></li>
+            <li><a href="">акции</a></li>
+            <li><a href="services.html">услуги</a></li>
+            <li><a href="delievery.html">оплата и доставка</a></li>
+            <li><a href="">о магазине</a></li>
+            <li><a href="contacts.html">контакты</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="header-bottom">
+      <div class="container"><a href="index.html" class="logo"><img src="img/logo.png" alt=""/><span>Специализированный магазин-склад</span></a><a href="" class="tel">8 (3532) 68 07 68</a>
+        <p class="time">пн - вс: 09:00 - 22:00</p><a href="" class="cart-header">
+          <div class="cart-icon"><span>5</span></div>
+          <div class="cart-info">
+            <p>Корзина</p>
+            <p class="price">25 300</p>
+          </div></a>
+      </div>
+    </div>
+  </header><a id="scroll-top" href="#gotop"></a>
+  <div class="main-content sidebar-page container">
+    <div class="inner-page">
+      <div class="content cart">
+        <div class="breadcrumbs">
+          <ul>
+            <li><a href="">Главная</a></li>
+            <li><a href="">Корзина</a></li>
+          </ul>
+        </div>
+        <div class="page-title">
+          <p>Товары в вашей корзине</p>
+        </div>
+        <div class="cart-wrap">
+          <div class="tabs">
+            <ul>
+              <li><a href="cart1.html">1 /  Ваш заказ</a></li>
+              <li class="active"><a href="cart2.html">2  /  Доставка и оплата</a></li>
+              <li><a href="cart3.html">3  /  Подтверждение</a></li>
+            </ul>
+          </div>
+          <div class="cart-delivery">
+            <form>
+              <div class="checkboxes">
+                <div class="left">
+                  <p>Доставка:</p>
+                  <div class="checkboxes-wrap">
+                    <div class="input-wrap">
+                      <input type="radio" id="check1" name="delivery" checked="checked"/>
+                      <label for="check1"> Курьером</label>
+                    </div>
+                    <div class="input-wrap">
+                      <input type="radio" id="check2" name="delivery"/>
+                      <label for="check2"> Самовывоз</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="right">
+                  <p>Оплата:</p>
+                  <div class="checkboxes-wrap">
+                    <div class="input-wrap">
+                      <input type="radio" id="check11" name="pay" checked="checked"/>
+                      <label for="check11"> Наличными курьеру</label>
+                    </div>
+                    <div class="input-wrap">
+                      <input type="radio" id="check12" name="pay"/>
+                      <label for="check12"> Банковской картой</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="cart-inputs">
+                <div class="input-block">
+                  <input type="text" placeholder="Ваше имя"/>
+                  <input type="text" placeholder="E-mail"/>
+                  <input type="text" placeholder="Мобильный телефон"/>
+                </div>
+                <div class="input-block">
+                  <input type="text" placeholder="Город"/>
+                  <input type="text" placeholder="Улица"/>
+                  <input type="text" placeholder="Корпус" class="half"/>
+                  <input type="text" placeholder="Квартира" class="half"/>
+                </div>
+                <div class="input-block">
+                  <textarea placeholder="Комментарий"></textarea>
+                </div>
+              </div>
+              <div class="cart-prices">
+                <div class="left">
+                  <p><span>Стоимость товара:</span><span>25 000 000</span></p>
+                  <p><span>Стоимость доставки:</span><span>300</span></p>
+                </div>
+                <div class="right">
+                  <p>Итого:<span>25 300</span></p>
+                  <input type="submit" value="Потвердить заказ" class="btn"/>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="footer-top">
+      <div class="container">
+        <div class="footer-left"><a href="" class="logo"><img src="img/logo.png" alt=""/>Специализированный магазин-склад</a>
+          <div class="social">
+            <ul>
+              <li class="fb"><a href=""></a></li>
+              <li class="tw"><a href=""></a></li>
+              <li class="g"><a href=""></a></li>
+              <li class="vk"><a href=""></a></li>
+              <li class="yt"><a href=""></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-menu">
+          <ul>
+            <li><a href="">Главная</a></li>
+            <li><a href="">О компании</a></li>
+            <li><a href="">Новости</a></li>
+            <li><a href="">Вакансии</a></li>
+            <li><a href="">Полезно знать</a></li>
+            <li><a href="">Услуги</a></li>
+            <li><a href="">Акции</a></li>
+            <li><a href="certificates.html">Сертификаты</a></li>
+            <li><a href="">Оплата и доставка</a></li>
+            <li><a href="">Контакты</a></li>
+          </ul>
+        </div>
+        <div class="footer-right">
+          <div class="info"><a href="" class="tel">8 (3532) 68 07 68</a>
+            <p class="time">пн - вс:  09:00 - 22:00</p>
+          </div>
+          <div class="madeby">
+            <p>Разработка сайта:  <a href="">ITcorp</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; 2016 Aquamatika.ru Все права защищены</p>
+        <div class="paysystem"><a href=""><img src="img/visa.png" alt=""/></a><a href=""><img src="img/mc.png" alt=""/></a></div>
+      </div>
+    </div>
+  </footer>
+  
+</body>
+<script>
+  function initMap() {
+  var image = {url: 'img/map-pointer.png'};
+  var myLatLng = {lat: 51.843781, lng: 55.112551};
+  var map = new google.maps.Map(document.getElementById('map'), {
+  center: myLatLng,
+  scrollwheel: false,
+  zoom: 16,
+  disableDefaultUI: true
+  });
+  var marker = new google.maps.Marker({
+  map: map,
+  position: myLatLng,
+  icon: image
+  });
+  }
+</script>

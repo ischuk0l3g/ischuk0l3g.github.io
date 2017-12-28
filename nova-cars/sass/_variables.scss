@@ -1,0 +1,27 @@
+$r: 'Roboto', sans-serif;;
+$rc: 'Roboto Condensed', sans-serif;;
+$black: #262626;
+
+
+@function rem($target) {
+   @if $target == 0 { @return 0 }
+   @return ($target / 14) + 0rem;
+}
+
+@mixin after() {
+	content: '';
+	position: absolute;
+}
+
+@mixin text-overflow() {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+@mixin fixed-menu() {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 999;
+}

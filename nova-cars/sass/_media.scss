@@ -1,0 +1,265 @@
+
+/********************* media 1170 *********************/
+
+
+@media (max-width: 1170px) {
+	.car-price {
+		width: 230px;
+		p {
+			font-size: 2.8rem;
+		}
+	}
+
+	.car-descr {
+	    width: calc(100% - 300px - 230px);
+	    padding-right: 15px;
+	}
+
+	header .offer-item-wrap {
+		display: none;
+	}
+}
+
+
+
+
+
+/********************* media 960 *********************/
+
+
+@media (max-width: 960px) {
+
+	.hamburger {
+		display: block;
+		position: absolute;
+		top: 3px;
+		right: 15px;
+	}
+
+	.header-top {
+		height: 59px;
+	}
+
+
+	.main-menu {
+		position: fixed;
+		display: block;
+		height: 100vh;
+		border-right: 2px solid #000;
+		//background: #F69797;
+		background: url('../img/cars.jpg') no-repeat center;
+		background-size: cover;
+		left: 0;
+		top: 0;
+		-webkit-transform: translateX(-100%);
+		        transform: translateX(-100%);
+		transition: -webkit-transform 2s;
+		transition: transform 2s;
+		transition: transform 2s, -webkit-transform 2s;
+		&.toggled {
+			-webkit-transform: translateX(0);
+			        transform: translateX(0);
+		}
+		a:hover {
+			font-size: 16px;
+			background: rgba(0,0,0,.8);
+		}
+	}
+
+
+	.grid-item {
+		margin: 20px 15px;
+	}
+	
+	.offer-item-wrap {
+		margin: 50px;
+	}
+
+	.car-slide {
+		-webkit-flex-wrap: wrap;
+		    -ms-flex-wrap: wrap;
+		        flex-wrap: wrap;
+	}
+	
+	.car-price {
+		padding: 0 15px;
+		margin-top: 25px;
+		display: -webkit-flex;
+		display: -ms-flexbox;
+		display: flex;
+	    width: 100%;
+	    -webkit-align-items: center;
+	        -ms-flex-align: center;
+	            align-items: center;
+	    -webkit-justify-content: space-between;
+	        -ms-flex-pack: justify;
+	            justify-content: space-between;
+	    .typical-button {
+	    	position: static;
+	    }
+	    span {
+	    	margin-bottom: 0;
+	    }
+	}
+
+	.car-descr {
+		width: calc(100% - 300px);
+	}
+	
+
+
+}
+
+
+
+
+
+
+
+
+/********************* media 768 *********************/
+
+
+@media (max-width: 768px) {
+
+	h1 {
+		font-size: 1.5rem;
+	}
+
+	.slogan {
+		font-size: 1.2rem;
+	}
+
+
+	h2 {
+		&:after, &:before {
+			display: none;
+		}
+	}
+
+	.car-img {
+		width: 100%;
+	}
+
+	.car-descr {
+		margin-top: 15px;
+		width: 100%;
+		padding: 0 15px;
+		p {
+			max-width: 100%;
+		}
+	}
+
+	.tab_container {
+		padding-top: 25px;
+		label {
+			display: block;
+			width: 80%;
+			margin: 0 auto;
+			&:after {
+				display: none;
+			}
+		}
+	}
+
+	.car-price {
+		-webkit-flex-wrap: wrap;
+		    -ms-flex-wrap: wrap;
+		        flex-wrap: wrap;
+		-webkit-justify-content: space-around;
+		    -ms-flex-pack: distribute;
+		        justify-content: space-around;
+		.typical-button {
+			margin-top: 25px;
+		}
+	}
+
+
+
+
+	.grid-item {
+		margin: 20px 5px;
+	}
+
+	.contacts-main {	
+		text-align: left;
+	}
+	
+	.contacts-text, .contacts-buttons {
+		max-width: 100%;
+		float: none;
+		text-align: left;
+	}
+
+	.contacts-text {
+		margin-bottom: 40px;
+	}
+	
+	
+}
+
+
+
+
+
+
+
+
+/********************* media 480 *********************/
+
+
+@media (max-width: 480px) {
+
+	h1 {
+		font-size: 1.2rem;
+	}
+
+	.slogan {
+		font-size: 1rem;
+	}
+
+
+	h2 {
+		font-size: rem(24);
+		&:after, &:before {
+			display: none;
+		}
+	}
+	
+
+	.offer-item-wrap {
+		width: 275px;
+		height: 275px;
+		padding: 20px;
+		margin: 25px 0;
+		p {
+			font-size: rem(20);
+		}
+	}
+
+	.contacts-buttons {
+		width: 100%;
+		max-width: 100%;
+		a {
+			width: 100%;
+			max-width: 100%;
+			font-size: .9rem;
+		}
+	}
+
+	.typical-button {
+		font-size: 1rem;
+	}
+
+	#tab1:checked ~ #content1, 
+	#tab2:checked ~ #content2, 
+	#tab3:checked ~ #content3, 
+	#tab4:checked ~ #content4, 
+	#tab5:checked ~ #content5 {
+		padding: 45px 5px;
+	}
+}
+
+
+
+
